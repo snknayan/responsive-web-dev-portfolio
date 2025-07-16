@@ -191,16 +191,36 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 }
 
 /* responsive media query */
-.hide{
+/* .hide{
     display: none;
-}
+} */
+
+    /* eita diye section wise hide kore kore responsive korbo tahole elomelo hobe na */
  @media screen and (max-width:576px){
 /* nicher style gulo only tokhon i apply hobe jokhhon ei condition kaj korbe condition kaj na korle ei style kaj korbe na    */
  .skills-container,
   .resume-container,
    footer, 
+   .banner,
+   nav,
+   nav > ul,
    .about-items{
         flex-direction: column;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .banner{
+        margin:20px;
+    }
+    .banner-profile-picture{
+        width: 100%;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .header{
+        background-image: none;
     }
     footer, .about{
         padding: 20px;
@@ -215,5 +235,15 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
 
 }
+}
+
+ /* Tablet specific media query */
+
+ @media screen and (min-width:576px) and (max-width:990px){
+    .banner{
+        flex-direction: column;
+    }
+
+
  }
  
